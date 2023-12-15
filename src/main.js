@@ -1,7 +1,14 @@
-const button = document.querySelector('#button');
-const text = document.querySelector('#sometext');
-
-button.addEventListener(
-  'click',
-  () => (text.innerHTML = 'This text generated form button create.')
+const lineAnimation = gsap.fromTo(
+  '.scroll-fill',
+  { y: -300 },
+  { y: 400, ease: 'none', duration: 1, stagger: 0.7 }
 );
+
+ScrollTrigger.create({
+  trigger: '.main-container',
+  start: 'top 300',
+  end: 'bottom 300',
+  markers: false,
+  animation: lineAnimation,
+  scrub: true,
+});

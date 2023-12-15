@@ -1,0 +1,49 @@
+body {
+  background: black;
+}
+
+.line {
+  border-top: 1px solid white;
+}
+
+.title {
+  font-size: 20rem;
+  font-weight: bold;
+  color: white;
+}
+
+.scroll-container {
+  width: 25px;
+  background: teal;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  height: 200px;
+  padding: 5rem;
+  margin-bottom: 5rem;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-fill {
+  width: 100%;
+  height: 100%;
+  background: yellow;
+}
+
+.spacer {
+  padding: 20rem;
+}
+
+p {
+  font-size: 20rem;
+  color: white;
+}/*# sourceMappingURL=main.css.map */
