@@ -1,3 +1,8 @@
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
+
+gsap.registerPlugin(ScrollTrigger);
+
 const lineAnimation = gsap.fromTo(
   '.scroll-fill',
   { y: -300 },
